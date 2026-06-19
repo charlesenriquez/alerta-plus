@@ -8,6 +8,9 @@
 <meta name="apple-mobile-web-app-title" content="Alerta+">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#1B3A6B">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
 <title>Alerta+</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <style>
@@ -74,7 +77,7 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
   <div style="flex:1;display:flex;flex-direction:column;background:#fff;">
     <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 28px 0;gap:24px;">
       <div style="width:100%;height:280px;background:linear-gradient(135deg,#e3f0ff,#d0f5f0);border-radius:28px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-        <i class="ti ti-bus" style="font-size:90px;color:var(--navy);opacity:0.9;"></i>
+        <i class="ti ti-car" style="font-size:90px;color:var(--navy);opacity:0.9;"></i>
         <div style="position:absolute;top:16px;right:16px;width:48px;height:48px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;"><i class="ti ti-shield-check"></i></div>
         <div style="position:absolute;bottom:20px;left:20px;background:var(--navy);color:#fff;border-radius:20px;padding:7px 14px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;"><i class="ti ti-map-pin" style="font-size:14px;"></i> Ruta en tiempo real</div>
         <div style="position:absolute;top:20px;left:20px;background:rgba(255,255,255,0.92);color:var(--green);border-radius:20px;padding:6px 12px;font-size:12px;font-weight:700;">● Seguro</div>
@@ -115,7 +118,7 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
     <div style="display:flex;align-items:center;gap:12px;color:var(--gray);font-size:13px;"><div style="flex:1;height:1px;background:var(--lightgray);"></div>o con correo<div style="flex:1;height:1px;background:var(--lightgray);"></div></div>
     <div style="display:flex;flex-direction:column;gap:6px;">
       <label style="font-size:13px;font-weight:600;color:var(--text);">Correo electrónico</label>
-      <input type="email" placeholder="estudiante@colegio.edu.pe"/>
+      <input type="email" placeholder="estudiante@continental.edu.pe"/>
     </div>
     <div style="display:flex;flex-direction:column;gap:6px;">
       <label style="font-size:13px;font-weight:600;color:var(--text);">Contraseña</label>
@@ -153,23 +156,23 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
       </svg>
       <div style="position:absolute;width:24px;height:24px;background:var(--teal);border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 8px rgba(42,191,191,0.2);top:278px;left:107px;z-index:5;"></div>
       <div onclick="show('tracking')" style="position:absolute;top:162px;left:60px;z-index:6;background:var(--navy);border-radius:20px;padding:5px 11px;display:flex;align-items:center;gap:5px;color:#fff;font-size:12px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.25);cursor:pointer;">
-        <i class="ti ti-bus" style="font-size:15px;"></i> A-01
+        <i class="ti ti-car" style="font-size:15px;"></i> A-01
       </div>
       <div style="position:absolute;top:210px;right:50px;z-index:6;background:var(--navy);border-radius:20px;padding:5px 11px;display:flex;align-items:center;gap:5px;color:#fff;font-size:12px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.25);">
-        <i class="ti ti-bus" style="font-size:15px;"></i> B-03
+        <i class="ti ti-car" style="font-size:15px;"></i> B-03
       </div>
       <div style="position:absolute;top:130px;left:228px;z-index:6;display:flex;flex-direction:column;align-items:center;">
-        <div style="background:var(--danger);color:#fff;border-radius:10px;padding:5px 9px;font-size:10px;font-weight:700;white-space:nowrap;">Colegio</div>
+        <div style="background:var(--danger);color:#fff;border-radius:10px;padding:5px 9px;font-size:10px;font-weight:700;white-space:nowrap;">Continental</div>
         <div style="width:2px;height:10px;background:var(--danger);"></div>
         <div style="width:8px;height:8px;border-radius:50%;background:var(--danger);"></div>
       </div>
     </div>
     <!-- Top search -->
     <div style="position:absolute;top:0;left:0;right:0;z-index:10;padding:12px 14px 24px;background:linear-gradient(to bottom,rgba(255,255,255,0.97) 65%,transparent);">
-      <div style="font-size:13px;color:var(--navy);font-weight:700;margin-bottom:7px;">Hola, Carlos 👋</div>
+      <div style="font-size:13px;color:var(--navy);font-weight:700;margin-bottom:7px;">Hola, Diego 👋</div>
       <div style="background:#fff;border-radius:14px;display:flex;align-items:center;gap:10px;padding:13px 14px;box-shadow:0 2px 14px rgba(0,0,0,0.1);">
         <i class="ti ti-search" style="color:var(--teal);font-size:22px;"></i>
-        <span style="color:var(--gray);font-size:15px;">¿A dónde va tu estudiante?</span>
+        <span style="color:var(--gray);font-size:15px;">¿A dónde va tu universitario?</span>
         <i class="ti ti-adjustments-horizontal" style="color:var(--navy);font-size:20px;margin-left:auto;"></i>
       </div>
     </div>
@@ -178,20 +181,20 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
     <!-- Bottom sheet -->
     <div style="position:absolute;bottom:60px;left:0;right:0;background:#fff;border-radius:24px 24px 0 0;box-shadow:0 -4px 24px rgba(0,0,0,0.1);padding:14px 14px 8px;z-index:10;">
       <div style="width:36px;height:4px;background:var(--lightgray);border-radius:2px;margin:0 auto 14px;"></div>
-      <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:12px;">Rutas activas hoy</div>
+      <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:12px;">Rutas activas hoy · Huancayo</div>
       <div onclick="show('tracking')" style="background:var(--bg);border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px;margin-bottom:8px;cursor:pointer;">
-        <div style="width:44px;height:44px;border-radius:12px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--green);"><i class="ti ti-bus"></i></div>
+        <div style="width:44px;height:44px;border-radius:12px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--green);"><i class="ti ti-car"></i></div>
         <div style="flex:1;">
-          <div style="font-size:14px;font-weight:600;color:var(--text);">Colegio Nacional — Urb. Las Flores</div>
-          <div style="font-size:12px;color:var(--gray);margin-top:2px;">Bus A-01 · 8 estudiantes · 6 min</div>
+          <div style="font-size:14px;font-weight:600;color:var(--text);">U. Continental — Jr. Loreto</div>
+          <div style="font-size:12px;color:var(--gray);margin-top:2px;">Auto HC-4821 · 3 universitarios · 6 min</div>
         </div>
         <div style="background:var(--teal);color:#fff;border-radius:20px;padding:4px 10px;font-size:11px;font-weight:700;">En ruta</div>
       </div>
       <div style="background:var(--bg);border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;">
-        <div style="width:44px;height:44px;border-radius:12px;background:#fff3e0;display:flex;align-items:center;justify-content:center;font-size:22px;color:#f57c00;"><i class="ti ti-bus"></i></div>
+        <div style="width:44px;height:44px;border-radius:12px;background:#fff3e0;display:flex;align-items:center;justify-content:center;font-size:22px;color:#f57c00;"><i class="ti ti-car"></i></div>
         <div style="flex:1;">
-          <div style="font-size:14px;font-weight:600;color:var(--text);">I.E. San Martín — Centro</div>
-          <div style="font-size:12px;color:var(--gray);margin-top:2px;">Bus B-03 · 12 estudiantes · 14 min</div>
+          <div style="font-size:14px;font-weight:600;color:var(--text);">U. Continental — Av. Giráldez</div>
+          <div style="font-size:12px;color:var(--gray);margin-top:2px;">Auto HC-2290 · 4 universitarios · 14 min</div>
         </div>
         <div style="background:#fff3e0;color:#f57c00;border-radius:20px;padding:4px 10px;font-size:11px;font-weight:700;">14 min</div>
       </div>
@@ -214,7 +217,7 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
       <div style="color:rgba(255,255,255,0.7);font-size:14px;">Seguimiento en vivo</div>
       <div style="margin-left:auto;background:rgba(42,191,191,0.25);color:var(--teal);border-radius:20px;padding:4px 10px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:5px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--teal);display:inline-block;animation:blink 1.2s infinite;"></span>En vivo</div>
     </div>
-    <div style="color:#fff;font-size:18px;font-weight:700;">Bus A-01 · Colegio Nacional</div>
+    <div style="color:#fff;font-size:18px;font-weight:700;">Auto HC-4821 · U. Continental</div>
     <div style="display:flex;align-items:baseline;gap:8px;margin-top:6px;">
       <div style="color:var(--teal);font-size:32px;font-weight:800;">6 min</div>
       <div style="color:rgba(255,255,255,0.6);font-size:14px;">para llegar a destino</div>
@@ -245,30 +248,30 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
       <path d="M117 260 L117 127 L280 127" stroke="white" stroke-width="2" fill="none" stroke-dasharray="10 6" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
     </svg>
     <div style="position:absolute;top:108px;left:104px;z-index:6;">
-      <div style="width:40px;height:40px;background:var(--navy);border-radius:50%;border:3px solid var(--teal);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;box-shadow:0 3px 12px rgba(0,0,0,0.3);"><i class="ti ti-bus"></i></div>
+      <div style="width:40px;height:40px;background:var(--navy);border-radius:50%;border:3px solid var(--teal);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;box-shadow:0 3px 12px rgba(0,0,0,0.3);"><i class="ti ti-car"></i></div>
     </div>
     <div style="position:absolute;top:108px;right:78px;z-index:6;display:flex;flex-direction:column;align-items:center;">
-      <div style="background:var(--danger);color:#fff;border-radius:10px;padding:6px 10px;font-size:10px;font-weight:700;white-space:nowrap;">Colegio Nacional</div>
+      <div style="background:var(--danger);color:#fff;border-radius:10px;padding:6px 10px;font-size:10px;font-weight:700;white-space:nowrap;">U. Continental</div>
       <div style="width:2px;height:12px;background:var(--danger);"></div>
       <div style="width:8px;height:8px;border-radius:50%;background:var(--danger);"></div>
     </div>
   </div>
   <div style="background:#fff;border-radius:22px 22px 0 0;padding:14px;box-shadow:0 -3px 16px rgba(0,0,0,0.08);flex-shrink:0;">
     <div style="width:36px;height:4px;background:var(--lightgray);border-radius:2px;margin:0 auto 14px;"></div>
-    <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:12px;">Estudiantes a bordo</div>
+    <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:12px;">Universitarios a bordo</div>
     <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--lightgray);">
       <div style="width:40px;height:40px;border-radius:50%;background:#1B3A6B;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;">LP</div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Lucía Paredes</div><div style="font-size:12px;color:var(--green);margin-top:2px;">● A bordo · 5to B</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Ana Quispe</div><div style="font-size:12px;color:var(--green);margin-top:2px;">● A bordo · Ing. Sistemas — 5to ciclo</div></div>
       <div style="background:#e8f5e9;color:var(--green);border-radius:20px;padding:4px 10px;font-size:11px;font-weight:700;">A bordo</div>
     </div>
     <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--lightgray);">
       <div style="width:40px;height:40px;border-radius:50%;background:#2ABFBF;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;">MR</div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Miguel Ríos</div><div style="font-size:12px;color:var(--green);margin-top:2px;">● A bordo · 4to A</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Carlos Huanca</div><div style="font-size:12px;color:var(--green);margin-top:2px;">● A bordo · Administración — 3er ciclo</div></div>
       <div style="background:#e8f5e9;color:var(--green);border-radius:20px;padding:4px 10px;font-size:11px;font-weight:700;">A bordo</div>
     </div>
     <div style="display:flex;align-items:center;gap:12px;padding:10px 0;">
       <div style="width:40px;height:40px;border-radius:50%;background:#f57c00;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;">KQ</div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Karen Quispe</div><div style="font-size:12px;color:#f57c00;margin-top:2px;">● Esperando en paradero</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Fiorella Ramos</div><div style="font-size:12px;color:#f57c00;margin-top:2px;">● Esperando en Jr. Ancash</div></div>
       <div style="background:#fff3e0;color:#f57c00;border-radius:20px;padding:4px 10px;font-size:11px;font-weight:700;">Espera</div>
     </div>
   </div>
@@ -291,23 +294,23 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
   <div class="scroll" style="background:#f4f6fa;padding:16px;display:flex;flex-direction:column;gap:10px;padding-bottom:76px;">
     <div style="background:#fff;border-radius:16px;padding:14px;display:flex;gap:12px;align-items:flex-start;border-left:4px solid var(--green);">
       <div style="width:40px;height:40px;border-radius:12px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="ti ti-circle-check" style="color:var(--green);font-size:22px;"></i></div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Lucía abordó el Bus A-01</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Subió en Jr. Loreto 245 · Hace 8 min</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Lucía abordó el Auto HC-4821</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Subió en Jr. Ancash 312, Huancayo · Hace 8 min</div></div>
     </div>
     <div style="background:#fff;border-radius:16px;padding:14px;display:flex;gap:12px;align-items:flex-start;border-left:4px solid var(--teal);">
       <div style="width:40px;height:40px;border-radius:12px;background:#e0f7f7;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="ti ti-map-pin" style="color:var(--teal2);font-size:22px;"></i></div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Bus A-01 en ruta normal</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Siguiendo la ruta programada · Hace 12 min</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Auto HC-4821 en ruta normal</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Ruta: Jr. Ancash → Av. Giráldez · Hace 12 min</div></div>
     </div>
     <div style="background:#fff;border-radius:16px;padding:14px;display:flex;gap:12px;align-items:flex-start;border-left:4px solid #f57c00;">
       <div style="width:40px;height:40px;border-radius:12px;background:#fff3e0;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="ti ti-clock" style="color:#f57c00;font-size:22px;"></i></div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Leve retraso Bus B-03</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Tráfico en Av. Ferrocarril · Hace 20 min</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Leve retraso Auto HC-2290</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Tráfico en Av. Ferrocarril, Huancayo · Hace 20 min</div></div>
     </div>
     <div style="background:#fff;border-radius:16px;padding:14px;display:flex;gap:12px;align-items:flex-start;border-left:4px solid var(--green);">
       <div style="width:40px;height:40px;border-radius:12px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="ti ti-home-check" style="color:var(--green);font-size:22px;"></i></div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Miguel llegó al colegio</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Llegó ayer a las 7:52 AM · Ayer</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Carlos llegó a la Continental</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Llegó ayer a las 7:48 AM · Jr. San Martín s/n · Ayer</div></div>
     </div>
     <div style="background:#fff;border-radius:16px;padding:14px;display:flex;gap:12px;align-items:flex-start;border-left:4px solid var(--teal);">
       <div style="width:40px;height:40px;border-radius:12px;background:#e0f7f7;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="ti ti-watch" style="color:var(--teal2);font-size:22px;"></i></div>
-      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Pulsera de Lucía conectada</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Batería al 78% · Señales vitales normales · Ayer</div></div>
+      <div style="flex:1;"><div style="font-size:14px;font-weight:600;color:var(--text);">Pulsera de Ana conectada</div><div style="font-size:12px;color:var(--gray);margin-top:3px;">Batería al 78% · Señales vitales normales · Ayer</div></div>
     </div>
   </div>
   <div class="navbar">
@@ -443,7 +446,7 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
         </div>
         <div style="flex:1;">
           <div style="color:#fff;font-size:15px;font-weight:700;">Alerta+ Band Pro</div>
-          <div style="color:rgba(255,255,255,0.5);font-size:12px;margin-top:2px;">Lucía Paredes · 5to B</div>
+          <div style="color:rgba(255,255,255,0.5);font-size:12px;margin-top:2px;">Ana Quispe · Ing. Sistemas — 5to ciclo</div>
         </div>
         <div style="text-align:right;">
           <div style="color:var(--teal);font-size:14px;font-weight:700;display:flex;align-items:center;gap:4px;"><i class="ti ti-battery-3" style="font-size:16px;"></i>78%</div>
@@ -527,7 +530,7 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
     <div style="background:linear-gradient(135deg,#fde8e8,#fff5f5);border-radius:18px;padding:16px;border:1.5px solid #fbd5d5;">
       <div style="font-size:14px;font-weight:700;color:var(--danger);margin-bottom:10px;display:flex;align-items:center;gap:6px;"><i class="ti ti-emergency-bed" style="font-size:18px;"></i> Protocolo de emergencia</div>
       <div style="font-size:13px;color:#7a3030;line-height:1.6;margin-bottom:14px;">Al presionar el botón físico por 3 segundos, se activa el SOS y se notifica a los contactos de emergencia con ubicación GPS en tiempo real.</div>
-      <button onclick="alert('🚨 Simulación SOS desde pulsera\n\nNotificando a:\n• Mamá - Rosa Paredes\n• Papá - Juan Paredes\n• Conductor Bus A-01\n\nUbicación enviada ✓')" style="background:var(--danger);color:#fff;border:none;border-radius:12px;padding:16px;font-size:15px;font-weight:700;cursor:pointer;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;"><i class="ti ti-urgent" style="font-size:18px;"></i> Probar alerta de emergencia</button>
+      <button onclick="alert('🚨 Simulación SOS desde pulsera\n\nNotificando a:\n• Mamá - Rosa Quispe\n• Papá - Juan Quispe\n• Conductor Auto HC-4821\n\nUbicación enviada ✓')" style="background:var(--danger);color:#fff;border:none;border-radius:12px;padding:16px;font-size:15px;font-weight:700;cursor:pointer;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;"><i class="ti ti-urgent" style="font-size:18px;"></i> Probar alerta de emergencia</button>
     </div>
   </div>
   <div class="navbar">
@@ -552,8 +555,8 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
     <div style="background:#fff;border-radius:20px;padding:16px;margin:0 16px;position:relative;top:-28px;box-shadow:0 4px 18px rgba(0,0,0,0.1);display:flex;align-items:center;gap:14px;">
       <div style="width:66px;height:66px;border-radius:20px;background:linear-gradient(135deg,var(--navy),var(--teal));display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;font-weight:700;flex-shrink:0;">CG</div>
       <div>
-        <div style="font-size:18px;font-weight:700;color:var(--text);">Carlos Guerrero</div>
-        <div style="font-size:13px;color:var(--gray);margin-top:2px;">Apoderado · 2 estudiantes</div>
+        <div style="font-size:18px;font-weight:700;color:var(--text);">Diego Paredes</div>
+        <div style="font-size:13px;color:var(--gray);margin-top:2px;">Apoderado · 2 universitarios</div>
         <div style="background:#e8eef8;color:var(--navy);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:700;margin-top:6px;display:inline-block;">Plan Familiar</div>
       </div>
     </div>
@@ -570,17 +573,17 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
     <div style="background:#fff;border-radius:16px;margin:0 16px 12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
       <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid var(--lightgray);cursor:pointer;">
         <div style="width:38px;height:38px;border-radius:10px;background:#e8eef8;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--navy);flex-shrink:0;"><i class="ti ti-users"></i></div>
-        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Mis estudiantes</div><div style="font-size:12px;color:var(--gray);margin-top:1px;">Lucía y Miguel registrados</div></div>
+        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Mis universitarios</div><div style="font-size:12px;color:var(--gray);margin-top:1px;">Ana y Carlos registrados</div></div>
         <i class="ti ti-chevron-right" style="color:var(--lightgray);font-size:18px;"></i>
       </div>
       <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid var(--lightgray);cursor:pointer;">
         <div style="width:38px;height:38px;border-radius:10px;background:#e0f7f7;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--teal2);flex-shrink:0;"><i class="ti ti-route"></i></div>
-        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Rutas activas</div><div style="font-size:12px;color:var(--gray);margin-top:1px;">2 rutas configuradas</div></div>
+        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Rutas activas</div><div style="font-size:12px;color:var(--gray);margin-top:1px;">2 rutas activas</div></div>
         <i class="ti ti-chevron-right" style="color:var(--lightgray);font-size:18px;"></i>
       </div>
       <div onclick="show('bt-scan')" style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid var(--lightgray);cursor:pointer;">
         <div style="width:38px;height:38px;border-radius:10px;background:#e0f7f7;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--teal2);flex-shrink:0;"><i class="ti ti-watch"></i></div>
-        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Pulsera de seguridad</div><div style="font-size:12px;color:var(--green);margin-top:1px;">● Alerta+ Band Pro conectada</div></div>
+        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Pulsera de seguridad</div><div style="font-size:12px;color:var(--green);margin-top:1px;">● ● Alerta+ Band Pro conectada</div></div>
         <i class="ti ti-chevron-right" style="color:var(--lightgray);font-size:18px;"></i>
       </div>
       <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid var(--lightgray);cursor:pointer;">
@@ -590,7 +593,7 @@ input[type=text],input[type=email],input[type=password]{width:100%;padding:14px 
       </div>
       <div style="display:flex;align-items:center;gap:14px;padding:16px;cursor:pointer;">
         <div style="width:38px;height:38px;border-radius:10px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--green);flex-shrink:0;"><i class="ti ti-history"></i></div>
-        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Historial de viajes</div><div style="font-size:12px;color:var(--gray);margin-top:1px;">Últimos 30 días</div></div>
+        <div style="flex:1;"><div style="font-size:15px;font-weight:600;color:var(--text);">Historial de viajes</div><div style="font-size:12px;color:var(--gray);margin-top:1px;">Últimos 30 días · Huancayo</div></div>
         <i class="ti ti-chevron-right" style="color:var(--lightgray);font-size:18px;"></i>
       </div>
     </div>
